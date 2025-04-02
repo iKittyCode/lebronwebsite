@@ -1,0 +1,212 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.stats-title {
+    font-family: Muli, sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/back-view-lebron-james-nba-desktop-1z06xxjewxeue765.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.title {
+    font: size 60px;
+    ;
+    text-decoration: none;
+}
+
+.currentstatscard {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.currentstatscard {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.currentstatscard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.currentstatscard:hover {
+    transform: scale(1.05);
+}
+
+.currentstatscard {
+    flex: 0 0 200px;
+    background: #222;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.currentstatscard {
+    width: 180px;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #552583;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.currentstatscard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.currentstatscard h3 {
+    font-size: 14px;
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+
+.teamates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.teamates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.teamatescard {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamatescard {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.teamatescard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.teamatescard:hover {
+    transform: scale(1.05);
+}
+
+.teamatescard {
+    flex: 0 0 200px;
+    background: #222;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.teamatescard {
+    width: 180px;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #552583;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.teamatescard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.teamatescard h3 {
+    font-size: 14px;
+    color: white;
+    font-family: 'Lora', serif;
+}
+.stats-box {
+    width: 400px;
+    height:250px;
+    max-height:max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+.stats-box h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.stats-box p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+.scrollwatcher {
+    height:10px;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    background-color:#FDB927;
+    width: 100%;
+    scale: 0.1 1;
+    transform-origin: left;
+    animation: scrollwatchers linear;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+
+}
+@keyframes scrollwatchers {
+    to {scale: 1 1;}
+}

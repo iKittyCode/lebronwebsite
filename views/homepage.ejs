@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lebron</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="scrollwatcher"></div>
+        <h1 class="title">LeGlorious King Lebron</h1>
+
+        <section class="currentseasonstats">
+            <div>
+                <h2 class="stats-title" style="font-family: Muli, sans-serif; color-adjust:inherit"> Current Season
+                    Stats 🏀</h2>
+            </div>
+            <div class="currentstatscard">
+                <h3 style="font-family: Muli, sans-serif;" class="stats-title">Current Regular Season</h3>
+                <img src="<%= current.image %>" alt="<%= current.title %>">
+                <h3 class="stats-title"> <%=current.currentaverage %></h3>
+            </div>
+        </section>
+
+        <section class="recentgame">
+            <h2 class="stats-title" style="color:rgba(40,40,40)">LeGoat Most Recent Game 🐐</h2>
+            <div class="stats-box" style="background-color:#552583">
+                <h3 class="stats-title" id="teamnamesforrecentmatchup" style="color:#FDB927">
+                    <%="Lakers" + " vs " + current.lastmatchup.matchup.vs%></h3>
+                <h3 class="stats-title" id="teamnamesforrecentmatchup" style="color:#FDB927">
+                    <%=current.lastmatchup.score.lakers + "‎‎ ‎ ‎ " +  current.lastmatchup.score.opponent%>
+                    <h3>-------------------------------</h3>
+                    <%=
+                </h3>
+
+
+            </div>
+        </section>
+
+
+        <section>
+            <h2 class="stats-title" style="color:royalblue">LeGm's Current Roster</h2>
+            <div class="teamates-grid">
+
+                <%     for (let player in current.roster["CommonTeamRoster"]) { %>
+                <%                 if (current.roster["CommonTeamRoster"].hasOwnProperty(player)) { %>
+                <%    if (current.roster["CommonTeamRoster"][player]["PLAYER"] != "LeBron James")  {      %>
+                <h2> </h2>
+                <div class="teamatescard">
+
+                    <img src="<%=current.teamheadshots[player] %>" onerror="this.src='placeholder1.png'">
+                    <h3><%= current.roster["CommonTeamRoster"][player]["PLAYER"] %></h3>
+
+
+                </div>
+                <% }}} %>
+            </div>
+        </section>
+
+        <script>
+            console.log("hi")
+        </script>
+
+
+</body>
+
+</html>

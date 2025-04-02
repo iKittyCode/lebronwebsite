@@ -1,0 +1,21 @@
+{
+  "name": "lebronwebsite",
+  "version": "1.0.0",
+  "description": "lebronn",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "iKittyCode",
+  "license": "MIT",
+  "dependencies": {
+    "@balldontlie/sdk": "^1.2.2",
+    "axion": "^0.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "fetch": "^1.1.0",
+    "nba": "^4.15.0",
+    "nba-api-client": "^1.1.2"
+  }
+}
