@@ -9,9 +9,7 @@ const recgame = require("./search.js")
 const {
     error
 } = require("console");
-const {
-    APIError
-} = require("@balldontlie/sdk");
+
 const nbasecondary = require("nba")
 
 
