@@ -83,7 +83,7 @@ function getlebronlastgamestatisticsnormal() {
 
 })
 }
-getlebronlastgamestatisticsnormal()
+
 app.use(express.static("public"))
 app.set('view engine', 'ejs');
 
@@ -142,7 +142,8 @@ app.get("/", (req, res) => {
 })
 
 })
-app.listen(process.env.PORT || 3000, () => {
+const PORT = 3000;
+app.listen(PORT, () => {
     console.log("Server on http://localhost:3000")
 
 })
