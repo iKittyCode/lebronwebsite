@@ -9,7 +9,9 @@ const recgame = require("./search.js")
 const {
     error
 } = require("console");
-
+const {
+    APIError
+} = require("@balldontlie/sdk");
 const nbasecondary = require("nba")
 
 
@@ -81,7 +83,7 @@ function getlebronlastgamestatisticsnormal() {
 
 })
 }
-
+getlebronlastgamestatisticsnormal()
 app.use(express.static("public"))
 app.set('view engine', 'ejs');
 
@@ -140,8 +142,7 @@ app.get("/", (req, res) => {
 })
 
 })
-const PORT = process.env.PORT || 4000
-app.listen(PORT, '0.0.0.0', () => {
-    console.log("Server up")
+app.listen(3000, () => {
+    console.log("Server on http://localhost:3000")
 
 })
