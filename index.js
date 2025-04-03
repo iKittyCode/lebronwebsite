@@ -140,8 +140,8 @@ app.get("/", (req, res) => {
 })
 
 })
-const PORT =10000;
+const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
-    console.log("Server on http://localhost:10000")
+    console.log("Server up")
 
 })
